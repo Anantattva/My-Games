@@ -76,7 +76,7 @@ I also happened to learn **LaTeX** to create PDFs for my Math Telegram channel (
 
 #### 📁 tetris.html
 - **What:** Classic Tetris
-- **Tech:** Canvas API, `setInterval` game loop
+- **Tech:** HTML tables, CSS manipulation, `setInterval` game loop
 - **Lesson Learned:** 2D arrays, grid rotations, collision detection
 
 ---
@@ -146,4 +146,4 @@ I also happened to learn **LaTeX** to create PDFs for my Math Telegram channel (
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/games.git
+   git clone https://github.com/Anantattva/My-Games.git
