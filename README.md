@@ -67,7 +67,7 @@ I coded many more games & projects in between, but I left them incomplete. So th
 
 | Game | Screenshot |
 |------|------------|
-| Carrom | ![Carrom](carrom.jpg) |
+| Carrom | ![Carrom](screenshots/carrom.jpg) |
 | Tic Tac Toe | ![TTT](screenshots/ttt.png) |
 | 2048 | ![2048](screenshots/2048.png) |
 | Snake | ![Snake](screenshots/snake.png) |
