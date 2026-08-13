@@ -1,131 +1,149 @@
-This repo contains the games I built across my self-teaching coding journey.
-I dislike laptops, so I code on mobiles/tablets. All my projects are mobile/tablet only.
+# 🎮 My self-taught coding journey in web & games
 
+![GitHub last commit](https://img.shields.io/github/last-commit/Anantattva/My-Games)
+![GitHub repo size](https://img.shields.io/github/repo-size/Anantattva/My-Games)
+![Made with ❤️](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
 
-In the first month, I built:
+> **।। ॐ नमः शिवाय ।।**
 
-• GuessTheNumber.html - uses standard binary trick
+Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranchi, India.
 
-• tetris.html
+---
 
+## 📑 Table of Contents
+- [About Me](#-about-me)
+- [Tech Stack](#-tech-stack)
+- [Projects](#-projects-month-by-month)
+  - [Month 1](#month-1--the-beginning)
+  - [Month 2](#month-2--building-structure)
+  - [Month 2.5](#month-25--canvas--reactivity)
+  - [Month 3](#month-3--ai--decision-trees)
+  - [Month 3.5](#month-35--advanced-logic)
+  - [Month 4.5](#month-45--the-big-one-carrom-)
+- [How to Run](#-how-to-run)
+- [Connect With Me](#-connect-with-me)
 
+---
 
+## 🧠 About Me
 
-In the second month, I built:
+I started coding on **24th February, 2026** – right in the middle of my 12th CBSE Commerce board exams. I don't know why I started; it was a random thought, a spontaneous curiosity.
 
-• Snake
+I'm mostly into:
+- **Vanilla JS** (no frameworks!)
+- **WebGPU & WGSL** (graphics/compute shaders)
+- **WebAssembly & Rust**
 
-• Uses modular class structure with linear dependency injection chains.
+I tried many languages/frameworks for 2–7 days each – C#, Python, C++, Lua, Kotlin, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
 
-• Uses HTML tables & setInterval for game loop.
+I also happened to learn **LaTeX** to create PDFs for my Math Telegram channel (*Maths Olympiad Preparation*) focused on olympiads, JEE, and research math. It was the 3rd largest in its niche in India and #1 fastest growing – but I deleted it when I lost passion for math over time.
 
-• Distributed across 3 files
+**I dislike frameworks and heavy dependence on libraries.** I try my best to code from scratch and write custom engines and game loops.
 
-• - Structure.html
+**I don't own a laptop.** Everything here was coded on my mobile/tablet (currently, a Redmi 15 5G). All games are mobile/tablet-only too.
 
-• - Aesthetics.css
+---
 
-• - Consciousness.js
+## 🛠️ Tech Stack
 
+- **Languages:** HTML, CSS, JavaScript (ES6 modules), Rust, WGSL
+- **APIs:** Canvas 2D, WebGPU, DOM API
+- **Patterns:** Mediator, Dependency Injection, Data-Oriented Design
+- **Tools:** Acode (on mobile), Termux, Google Gemini AI
 
+---
 
+## 📸 Screenshots
 
-In the 2.5 month, I built:
+| Game | Screenshot |
+|------|------------|
+| Carrom | ![Carrom](screenshots/carrom.png) |
+| 2048 | ![2048](screenshots/2048.png) |
+| Snake | ![Snake](screenshots/snake.png) |
 
-• 2048
+*(Screenshots coming soon – I'm on mobile and haven't uploaded them yet!)*
 
-• Uses Canvas API with requestAnimationFrame for game loop.
+---
 
-• Uses mediator-class pattern with one class acting as the single SOURCE OF TRUTH.
+## 📂 Projects (Month-by-Month)
 
-• Also uses reactive-style programming via in-built MutationObserver API.
+### Month 1 – The Beginning
 
-• 3 files
+#### 📁 GuessTheNumber.html
+- **What:** Number guessing game using binary search trick
+- **Tech:** Vanilla JS, DOM events
+- **Lesson Learned:** Conditionals, user input, binary search logic
 
-• - Element.html
+#### 📁 tetris.html
+- **What:** Classic Tetris
+- **Tech:** Canvas API, `setInterval` game loop
+- **Lesson Learned:** 2D arrays, grid rotations, collision detection
 
-• - Design.css
+---
 
-• - Intelligence.js
+### Month 2 – Building Structure
 
+#### 🐍 Snake
+- **What:** Classic Snake game
+- **Tech:** HTML tables, `setInterval` game loop, modular class structure
+- **Patterns:** Linear dependency injection chains
+- **Files:** `Structure.html`, `Aesthetics.css`, `Consciousness.js`
 
+---
 
+### Month 2.5 – Canvas & Reactivity
 
-In the third month:
+#### 🔢 2048
+- **What:** 2048 puzzle game
+- **Tech:** Canvas API, `requestAnimationFrame`, mediator-class pattern
+- **Patterns:** Single Source of Truth, reactive UI via `MutationObserver`
+- **Files:** `Element.html`, `Design.css`, `Intelligence.js`
 
-• Tic Tac Toe with minimax-like AI
+---
 
-• Uses mediator + tree-like class structure.
+### Month 3 – AI & Decision Trees
 
-• AI is a simple 5 step if processor that runs internally cases in itself and plays the best possible one on the basis of 5 steps ranked from highest priority to least.
+#### ❌ Tic Tac Toe (Minimax-like AI)
+- **What:** Tic Tac Toe with a 5-step priority-based AI
+- **Tech:** Canvas API, mediator + tree-like class structure
+- **AI Logic:** 5-step if-processor that ranks moves by priority (highest to lowest)
+- **Files:** `Form.html`, `Beauty.css`, `Mind.js`, `37222e8f...jpg`
 
-• 3 files & 1 image:
+---
 
-• - Form.html
+### Month 3.5 – Advanced Logic
 
-• - Beauty.css
+#### 🔢 Guess the Number ++
+- **What:** Enhanced version with dynamic difficulty (user sets max limit)
+- **Tech:** Vanilla JS, dynamic DOM updates
+- **Files:** `Manifest.html`, `Art.css`, `Brain.js`
 
-• - Mind.js
+---
 
-• - 37222e8f1e96630481a8ea56fb62a24d.jpg
+### Month 4.5 – The Big One: Carrom 🎯
 
+#### 📌 Carrom with Physics Engine + AI Opponent
+- **What:** Full Carrom game with custom physics, collision engine, and AI
+- **Tech:** Canvas API, `requestAnimationFrame`, mediator-class pattern, data-oriented design
+- **Architecture:**
+  - `PureBeing.js` – Single source of truth (all game data)
+  - `Engine.js` – Pure physics functions (decoupled from game rules)
+  - `CarromAI.js` – CPU AI (serial processing)
+  - `GPU_AI.js` + `Engine_Shader.js` – WebGPU compute shader (parallel processing)
+- **AI Algorithm:** Distance minimization (closest pieces to pockets)
+- **Files:** `GameScreen.html`, `GameScreen_Consciousness.js`, `PureBeing.js`, `Engine.js`, `CarromAI.js`, `GPU_AI.js`, `Engine_Shader.js`, `Back2.jpg`
 
+**⚠️ Status:**
+- ✅ CPU AI: Working perfectly
+- ✅ Physics engine: Working (friction, momentum transfer, pocketing)
+- ✅ Game loop, scoring, turn management: All working
+- ❌ **WebGPU AI:** Compute shader runs but crashes on `stagingBuffer.mapAsync()` readback (mobile)
+- 🆘 **Help wanted!** If you know WebGPU/WGSL, please open an issue or DM me.
 
+---
 
-In the 3.5 month:
+## 🚀 How to Run
 
-• Guess the number ++
-
-• Same binary trick game with advanced limits. Player can dynamically adjust max limit.
-
-• 3 files:
-
-• - Manifest.html
-
-• - Art.css
-
-• - Brain.js
-
-
-
-
-Many more games were coded in between but I left most incomplete and don't post them here on GitHub.
-
-
-
-
-In the 4.5 month:
-
-• Carrom with custom physics engine + AI opponent.
-
-• Uses mediator-class structure with data-oriented design & canvas API with requestAnimationFrame.
-
-• One single file PureBeing.js acts as the source of truth.
-
-• Physics & collisions engine is stored in a separate Engine.js file. This file contains pure physics functions & pipeline only - indifferent to game rules. This decoupling allows for effortless usage for both main gameplay & AI simulations.
-
-• Has 2 AI: one using CPU, the other using WebGPU. Both are same. Just the WebGPU one is parellelly-processed & lightning fast.
-
-• CPU AI is stored in CarromAI.js file & GPU AI is in GPU_AI.js file with WGSL shader in Engine_Shader.js file.
-
-• Both call the same physics pipeline, simulates hypothetical cases internally & sends the best possible shot by using distance minimization algorithm.
-
-• Has extensive JSDocs, comments. personal notes & explanations.
-
-• 7 files & 1 image:
-
-• - GameScreen.html
-
-• - GameScreen_Consciousness.js
-
-• - PureBeing.js
-
-• - Engine.js
-
-• - CarromAI.js
-
-• - GPU_AI.js
-
-• - Engine_Shader.js
-
-• - Back2.jpg
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/yourusername/games.git
