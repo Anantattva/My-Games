@@ -42,6 +42,8 @@ I also happened to learn **LaTeX** to create PDFs for my Math Telegram channel (
 
 **I don't own a laptop.** Everything here was coded on my mobile/tablet (currently, a Redmi 15 5G). All games are mobile/tablet-only too.
 
+I coded many more games & projects in between, but I left them incomplete. So they are not posted here.
+
 ---
 
 ## 🛠️ Tech Stack
