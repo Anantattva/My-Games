@@ -17,6 +17,8 @@ In the second month, I built:
 
 • Uses modular class structure with linear dependency injection chains.
 
+• Uses HTML tables & setInterval for game loop.
+
 • Distributed across 3 files
 
 • - Structure.html
@@ -32,7 +34,7 @@ In the 2.5 month, I built:
 
 • 2048
 
-• Uses Canvas API
+• Uses Canvas API with requestAnimationFrame for game loop.
 
 • Uses mediator-class pattern with one class acting as the single SOURCE OF TRUTH.
 
@@ -96,17 +98,19 @@ In the 4.5 month:
 
 • Carrom with custom physics engine + AI opponent.
 
-• Uses mediator-class structure with data-oriented design & canvas API.
+• Uses mediator-class structure with data-oriented design & canvas API with requestAnimationFrame.
 
 • One single file PureBeing.js acts as the source of truth.
 
-• Physics & collisions engine is stored in a separate Engine.js file. This file contains pure physics functions & pipeline only - indifferent to game rules. This decoupling allows for effortless usage between main gameplay & AI simulations.
+• Physics & collisions engine is stored in a separate Engine.js file. This file contains pure physics functions & pipeline only - indifferent to game rules. This decoupling allows for effortless usage for both main gameplay & AI simulations.
 
 • Has 2 AI: one using CPU, the other using WebGPU. Both are same. Just the WebGPU one is parellelly-processed & lightning fast.
 
+• CPU AI is stored in CarromAI.js file & GPU AI is in GPU_AI.js file with WGSL shader in Engine_Shader.js file.
+
 • Both call the same physics pipeline, simulates hypothetical cases internally & sends the best possible shot by using distance minimization algorithm.
 
-• Has extensive JSDocs, comments & explanations.
+• Has extensive JSDocs, comments. personal notes & explanations.
 
 • 7 files & 1 image:
 
