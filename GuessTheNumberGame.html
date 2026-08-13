@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat+Brush&family=Euphoria+Script&family=Grand+Hotel&family=Great+Vibes&family=Kaushan+Script&family=Oleo+Script&display=swap" rel="stylesheet" rel="stylesheet">
+    <title>
+      Guess the Number Game
+    </title>
+    <style>
+      body {
+        margin: 0;
+        overflow: scroll;
+      }
+      #intro {
+        font-family: 'Grand Hotel';
+        text-align: center;
+        margin-top: 12vh;
+        font-size: 6vmax;
+        color: white;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1vmin;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-7vh);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+     } /*animation */
+      #loginPage {
+        height: 100vh;
+        max-height: 120vh;
+        width: 100vw;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(135deg, rgba(0,0,250,0.2), rgba(0,0,100,0.1));
+      }
+      form {
+        position: relative;
+        display: flex;
+        gap: 3vh;
+        flex-direction: column;
+        width: 60vw;
+        margin-top: 20vh;
+        margin-left: 50vw;
+        transform: translateX(-50%);
+      }
+      #playerName {
+        border: 0.2vmax solid rgba(100, 40, 200, 0.7);
+        backdrop-filter: blur(15vmax);
+        box-shadow: 0.4vmin 0.4vmin 3vmin 0.01vmin rgba(0,0,0,0.3);
+        text-align: center;
+        background: violet;
+        height: 8vmax;
+        border-radius: 2vmax;
+        font-size: 4vmax;
+        color: black;
+        font-family: 'Oleo Script';
+        opacity: 70%;
+      }
+      #loginButton {
+        border: 0.2vmax solid rgba(100, 40, 200, 0.7);
+        backdrop-filter: blur(15vmax);
+        box-shadow: 0.4vmin 0.4vmin 3vmin 0.01vmin rgba(0,0,0,0.3);
+        text-align: center;
+        background: violet;
+        height: 6vmax;
+        border-radius: 2vmax;
+        font-size: 3vmax;
+        color: black;
+        font-family: 'Caveat Brush';
+        opacity: 70%;
+      }
+      #loginButton:hover {
+        background: white;
+      }
+      #gamePage {
+        position: absolute;
+        height: 130vh;
+        width: 100vw;
+        background: linear-gradient(135deg, rgba(0,250,200, 0.3), rgba(0,150,250,0.3));
+      }
+      #welcome {
+        text-align: center;
+        position: relative;
+        width: 84vw;
+        border: 0.3vmax solid rgba(255, 100, 0, 0.7);
+        border-radius: 3vmax;
+        background: rgba(255, 200, 100, 0.4);
+        padding: 2vmax;
+        font-size: 3.5vmin;
+        font-family: 'Kaushan Script';
+        margin-top: 1vmax;
+        margin-left: 50vw;
+        transform: translateX(-50%);
+        backdrop-filter: blur(15vmax);
+        box-shadow: 0.1vmin 0.1vmin 3vmin 0.01vmin rgba(0,0,0,0.1);
+        z-index: 10;
+      }
+      #boxes {
+        position: relative;
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+      .box {
+        box-shadow: 0.1vmin 0.1vmin 3vmin 0.01vmin rgba(0,0,0,0.1);
+        position: relative;
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-size: 3vmin;
+        padding: 1vmin;
+        margin-left: 50vw;
+        transform: translateX(-50%);
+        width: 90vw;
+        border-radius: 3vmin;
+        border: 0.5vmin solid rgb(0,250,200);
+        background: rgba(0,250,200,0.3);
+      }
+      .box.selected {
+        border: 0.5vmin solid rgb(250,40,100);
+        background: rgba(200,20,100,0.3);
+      }
+      #controls {
+        margin-left: 50vw;
+        transform: translateX(-50%);
+        margin-top: 4vh;
+        display: flex;
+        gap: 3vw;
+      }
+      #resultButton {
+        position: relative;
+        width: 80vw;
+        border: 0.2vmax solid rgba(100, 40, 200, 0.7);
+        backdrop-filter: blur(15vmax);
+        box-shadow: 0.4vmin 0.4vmin 3vmin 0.01vmin rgba(0,0,0,0.3);
+        text-align: center;
+        background: violet;
+        height: 8vmax;
+        border-radius: 2vmax;
+        font-size: 3vmax;
+        color: black;
+        font-family: 'Caveat Brush';
+        opacity: 70%;
+      }
+      #refreshButton {
+        position: relative;
+        width: fit-content;
+        border: 0.2vmax solid rgba(100, 40, 200, 0.7);
+        backdrop-filter: blur(15vmax);
+        box-shadow: 0.4vmin 0.4vmin 3vmin 0.01vmin rgba(0,0,0,0.3);
+        text-align: center;
+        background: violet;
+        height: 8vmax;
+        border-radius: 2vmax;
+        font-size: 3vmax;
+        color: black;
+        font-family: 'Caveat Brush';
+        opacity: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game">
+      <div id="loginPage" style="display: block">
+        <div id="intro">Welcome to<br>Guess the Number JS</div>
+        <div>
+          <form>
+            <input id="playerName" placeholder="Enter your name" required></input>
+            <button id="loginButton">Play!</button>
+          </form>
+        </div>
+      </div>
+      <div id="gamePage" style="display: none">
+        <div id="welcome"></div>
+        <div id="boxes">
+          <div class="box" data-value="0" data-selected="false"></div>
+          <div class="box" data-value="1" data-selected="false"></div>
+          <div class="box" data-value="2" data-selected="false"></div>
+          <div class="box" data-value="3" data-selected="false"></div>
+          <div class="box" data-value="4" data-selected="false"></div>
+          <div class="box" data-value="5" data-selected="false"></div>
+          <div class="box" data-value="6" data-selected="false"></div>
+        </div>
+        <div id="controls">
+          <button id="resultButton">Guess my Number</button>
+          <button id="refreshButton">Refresh</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    //Our JS Bro
+    //get pages
+    const loginPage = document.getElementById('loginPage');
+    const gamePage = document.getElementById('gamePage');
+    //get form data
+    const playerName = document.getElementById('playerName');
+    const loginButton = document.getElementById('loginButton');
+    //get gamePage data
+    const welcome = document.getElementById('welcome');
+    //handle login
+    loginButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (playerName.value.trim() === "") alert("Please enter your name to play!!");
+      else {
+        welcome.innerHTML = `<span>Welcome ${playerName.value}!</span><br>
+        Think of a number ranging from 1 to 100, check all boxes thoroughly, select the once where your number appear & hit guess button.`;
+        loginPage.style.display = 'none';
+        gamePage.style.display = 'block';
+      }
+    });
+    //generate boxes
+    const boxes = document.getElementsByClassName('box');
+    const cards = [[], [], [], [], [], [], []];
+    for (let k=0; k<7; k++) {
+      const currentCard = cards[k];
+      for (let i=1; i<=100; i++) {
+        let b = i.toString(2);
+        let l = b.length;
+        if (b[l-k-1] === "1") {
+          currentCard.push(i);
+        };
+      };
+      boxes[k].innerText = currentCard.join(", ");
+    };
+    function updatePlayerNumber() {
+      let playerNumber = 0;
+      Array.from(boxes).forEach(box => {
+        if (box.classList.contains('selected')) {
+          playerNumber += 2**(parseInt(box.dataset.value));
+        };
+      });
+      return playerNumber;
+    };
+    Array.from(boxes).forEach(box => {
+      box.addEventListener('click', (e) => {
+        e.target.classList.toggle('selected');
+      });
+    });
+    function resetGame() {
+      Array.from(boxes).forEach(box => {
+        box.classList.remove('selected');
+        box.dataset.selected = "false";
+      });
+    };
+    const resultButton = document.getElementById('resultButton');
+    const refreshButton = document.getElementById('refreshButton');
+    resultButton.addEventListener('click', () => {
+      const playerNumber = updatePlayerNumber();
+      alert(`Your number is ${playerNumber}!`);
+      resetGame();
+    });
+    refreshButton.addEventListener('click', () => {resetGame();});
+  </script>
+</html>
