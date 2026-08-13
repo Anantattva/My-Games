@@ -12,6 +12,7 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranc
 
 ## 📑 Table of Contents
 - [About Me](#-about-me)
+- [Mindset & Philosophy](#-mindset-philosophy)
 - [Tech Stack](#-tech-stack)
 - [Projects](#-projects-month-by-month)
   - [Month 1](#month-1--the-beginning)
@@ -19,7 +20,7 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranc
   - [Month 2.5](#month-25--canvas--reactivity)
   - [Month 3](#month-3--ai--decision-trees)
   - [Month 3.5](#month-35--advanced-logic)
-  - [Month 4.5](#month-45--the-big-one-carrom-)
+  - [Month 4.5](#month-45--milestone-carrom-)
 - [How to Run](#-how-to-run)
 - [Connect With Me](#-connect-with-me)
 
@@ -36,7 +37,7 @@ I'm mostly into:
 
 I tried many languages/frameworks for 2–7 days each – C#, C++, Lua, Kotlin, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
 
-About 5 years back, when I was 14, I tried twice learning Python by YouTube, cuz I had heard it's an easy language & used by hackers (I wanted to appear cool). It was an horrible experience. I built programming phobia since then and never coded until Feb 2026.
+About 5 years back, when I was 14, I tried twice learning Python by YouTube, cuz I had heard it's an easy language & used by hackers (I wanted to appear cool). It was an horrible experience. I developed programming phobia since then and never coded until Feb 2026.
 
 Only now, that I could see programming has little to do with the language and more with you. Python simply didn't resonate with me and I clung rigidly to it regardless, moreover using YouTube as a learning environment made it more worse. On YT, you watch for 40 mins and code for 10. With book/docs/AI, you read syntax, API & concepts for 10 mins and code for 40. Moreover, now I find any language easy enough to learn.
 
@@ -54,12 +55,22 @@ I coded many more games & projects in between, but I left them incomplete. So th
 
 ---
 
+## 🧘 Mindset & Philosophy
+
+Besides commerce & coding, I have had strong affinity for meditation since very young age - maybe 10 or 11. I have always found myself failing to concentrate & meditate properly.
+
+It wasn't until the very end of 2024 (at 17.5 y/o, class 11th), when I could sit calmly for hours, hone my attention & maintain single-pointed focus.
+
+Developers obsess over state management, but often forget to manage their very own state. I find meditation as a necessary anchor - one that sharpens my observation, detachment, stillness & interoception - allowing me to focus & code for hours.
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Languages:** HTML, CSS, JavaScript (ES6 modules), Rust, WGSL
 - **APIs:** Canvas 2D, WebGPU, DOM API
 - **Patterns:** Mediator, Dependency Injection, Data-Oriented Design
-- **Tools:** Acode (on mobile), Termux, Google Gemini AI
+- **Tools:** Acode, Termux, Google Gemini AI
 
 ---
 
