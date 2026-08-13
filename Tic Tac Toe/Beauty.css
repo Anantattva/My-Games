@@ -1,0 +1,285 @@
+/* ======================
+++++ GLOBAL SETUP ++++
+====================== */
+
+body {
+  margin: 0;
+}
+:root {
+  --pink1: #AA5599;
+}
+
+#game {
+  position: absolute;
+  height: 100dvh;
+  width: 100dvw;
+  background-image: url(37222e8f1e96630481a8ea56fb62a24d.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  overflow: hidden;
+}
+#title {
+  position: absolute;
+  font-size: 6vmin;
+  color: white;
+  font-weight: bold;
+  font-family: 'Space Mono';
+  background-clip: text;
+  -webkit-background-clip: text;
+  overflow: hidden;
+  text-shadow:
+    -0.4vw 0.2vw 0.1vw hotpink;
+    -0.8vw 0.4vw 0.1vw indigo;
+  top: 4%;
+  left: 20%;
+  animation: titleDance 3s ease-in infinite;
+}
+#title::after {
+  content: 'Tic Tac Toe';
+  position: absolute;
+  overflow: hidden;
+  animation: moveGlow 4s infinite;
+  width: 100%;
+  height: 100%;
+  opacity: 65%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 255, 255, 0.4) 25%,
+      rgba(0, 255, 255, 0.8) 50%,
+      rgba(0, 255, 255, 0.4) 75%,
+      rgba(0, 255, 255, 0.01) 100%
+    );
+  background-clip: text;
+  }
+@keyframes moveGlow {
+  0% { transform: translateX(-170%) rotate(0deg); }
+  100% { transform: translateX(170%) rotate(0deg); }
+  }
+@keyframes titleDance {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  85% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(1.3);
+  }
+  95% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#scores {
+  position: absolute;
+  height: 6vh;
+  min-width: 80vw;
+  width: auto;
+  padding: 2%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 25vw;
+  background: black;
+  z-index: 1;
+  /* .. border .. */
+  border-radius: 3vmin;
+  border-left: 1vw solid hotpink;
+  border-right: 1vw solid indigo;
+  font-size: 4vmin;
+  color: white;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+  /* .. shadow .. */
+  box-shadow:
+    -0.2vw 0 0.14vmin 0 white,
+    0vw 0 0.24vmin 0 white,
+    0 0 0.7vmin 0 white;
+}
+#scores .scoreCount {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10%;
+}
+#scores .scoreRecord {
+  font-weight: 400;
+  font-size: 4vmin;
+  text-align: right;
+  font-family: 'Lexend';
+}
+
+#gameBox {
+  position: absolute;
+  z-index: 1;
+  padding: 1dvh;
+  top: 20dvh;
+  left: 50dvw;
+  transform: translateX(-50%);
+  height: 34dvh;
+  width: 34dvh;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 0 0.3vw 0.3vw rgba(255, 255, 255, 0.84),
+    0 0 0.6vw 0.6vw rgba(255, 255, 255, 0.5);
+  border: 0.4vmin solid white;
+  outline: none;
+  border-radius: 3vmin;
+}
+#gameLayout {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  padding: 1dvh;
+  /* table styling */
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#gameLayout td {
+  position: relative;
+  background: transparent;
+  text-align: center;
+  border: 1dvh double white;
+  height: 10dvh;
+  width: 10dvh;
+  cursor: pointer;
+  font-size: 9dvh;
+  font-family: 'Times New Roman';
+  transition: background 1s;
+}
+.gameCell.filled {
+  animation: popIn 0.5s ease-out;
+}
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#gameLayout tr:first-child td {
+  border-top: none;
+}
+#gameLayout tr:last-child td {
+  border-bottom: none;
+}
+#gameLayout td:nth-child(3n+1) {
+  border-left: none;
+}
+#gameLayout td:nth-child(3n) {
+  border-right: none;
+}
+
+/* .. turn styling .. */
+#turn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10vh;
+  width: 40vw;
+  padding: 0vh 5vw;
+  border-radius: 8vmin;
+  border: none;
+  border-right: 1vw solid indigo;
+  border-left: 1vw solid hotpink;
+  box-shadow: 0 0 0.7vmin 0 white;
+  background: black;
+  /* text styling */
+  color: white;
+  text-align: center;
+  font-size: 7vmin;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  animation: changeText 4s ease-in-out infinite;
+}
+@keyframes changeText {
+  0% {
+    opacity: 60%;
+    font-size: 6vmin;
+  }
+  50% {
+    opacity: 100%;
+    font-size: 7.5vmin;
+  }
+  100% {
+    opacity: 60%;
+    font-size: 6vmin;
+  }
+}
+
+/* .. restart button styling .. */
+#restartButton {
+  position: absolute;
+  height: 12vh;
+  width: fit-content;
+  font-size: 8vmin;
+  bottom: 12%;
+  left: 50%;
+  padding: 3vh 6vw;
+  display: grid;
+  place-items: center;
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 3vw;
+  border-left: 1vmin solid hotpink;
+  box-shadow:
+    -0.2vw 0 0.14vmin 0 white,
+    0vw 0 0.24vmin 0 white,
+    0 0 0.7vmin 0 white;
+  backdrop-filter: blur(2px);
+  transition: 0.4s ease-in-out;
+  background: black;
+  color: white;
+  font-family: 'Fraunces';
+  cursor: pointer;
+}
+#restartButton:active {
+  transform: translateX(-50%) scale(1.1);
+  filter: brightness(1.2) contrast(1.3);
+}
+
+/* .. game over styling .. */
+#gameOverWindow {
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  height: 100dvh;
+  width: 100dvw;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
