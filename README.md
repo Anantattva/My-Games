@@ -2,8 +2,10 @@ This repo contains the games I built across my self-teaching coding journey.
 I dislike laptops, so I code on mobiles/tablets. All my projects are mobile/tablet only.
 
 
-In the first month, I built: \\
+In the first month, I built:
+
 • GuessTheNumber.html - uses standard binary trick
+
 • tetris.html
 
 
