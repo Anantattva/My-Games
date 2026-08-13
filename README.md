@@ -67,7 +67,8 @@ I coded many more games & projects in between, but I left them incomplete. So th
 
 | Game | Screenshot |
 |------|------------|
-| Carrom | ![Carrom](screenshots/carrom.png) |
+| Carrom | ![Carrom](carrom.jpg) |
+| Tic Tac Toe | ![TTT](screenshots/ttt.png) |
 | 2048 | ![2048](screenshots/2048.png) |
 | Snake | ![Snake](screenshots/snake.png) |
 
@@ -183,3 +184,5 @@ MIT License – feel free to use, learn, and build upon these games.
 ---
 
 **Made with ❤️ on a smartphone from Ranchi, India**
+
+**।। ॐ नमः शिवाय ।।**
