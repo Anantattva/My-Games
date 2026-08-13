@@ -12,12 +12,12 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranc
 
 ## 📑 Table of Contents
 - [About Me](#-about-me)
-- [Mindset & Philosophy](#-mindset-philosophy)
-- [Tech Stack](#-tech-stack)
+- [Mindset & Philosophy](#-mindset--philosophy)
+- [Tech Stack](#%EF%B8%8F-tech-stack)
 - [Projects](#-projects-month-by-month)
   - [Month 1](#month-1--the-beginning)
   - [Month 2](#month-2--building-structure)
-  - [Month 2.5](#month-25--canvas--reactivity)
+  - [Month 2.5](#month-25--milestone-canvas--reactivity)
   - [Month 3](#month-3--ai--decision-trees)
   - [Month 3.5](#month-35--advanced-logic)
   - [Month 4.5](#month-45--milestone-carrom-)
