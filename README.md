@@ -101,7 +101,7 @@ I coded many more games & projects in between, but I left them incomplete. So th
 
 ---
 
-### Month 2.5 – Canvas & Reactivity
+### Month 2.5 – MILESTONE: Canvas & Reactivity
 
 #### 🔢 2048
 - **What:** 2048 puzzle game
@@ -130,7 +130,7 @@ I coded many more games & projects in between, but I left them incomplete. So th
 
 ---
 
-### Month 4.5 – The Big One: Carrom 🎯
+### Month 4.5 – MILESTONE: Carrom 🎯
 
 #### 📌 Carrom with Physics Engine + AI Opponent
 - **What:** Full Carrom game with custom physics, collision engine, and AI
@@ -140,6 +140,7 @@ I coded many more games & projects in between, but I left them incomplete. So th
   - `Engine.js` – Pure physics functions (decoupled from game rules)
   - `CarromAI.js` – CPU AI (serial processing)
   - `GPU_AI.js` + `Engine_Shader.js` – WebGPU compute shader (parallel processing)
+  - Extensive comments, JSDoc, explanations & personal notes
 - **AI Algorithm:** Distance minimization (closest pieces to pockets)
 - **Files:** `GameScreen.html`, `GameScreen_Consciousness.js`, `PureBeing.js`, `Engine.js`, `CarromAI.js`, `GPU_AI.js`, `Engine_Shader.js`, `Back2.jpg`
 
@@ -147,13 +148,38 @@ I coded many more games & projects in between, but I left them incomplete. So th
 - ✅ CPU AI: Working perfectly
 - ✅ Physics engine: Working (friction, momentum transfer, pocketing)
 - ✅ Game loop, scoring, turn management: All working
-- ❌ **WebGPU AI:** Compute shader runs but crashes on `stagingBuffer.mapAsync()` readback (mobile)
-- 🆘 **Help wanted!** If you know WebGPU/WGSL, please open an issue or DM me.
+## 🆘 Help Wanted: WebGPU Debugging
+
+I'm stuck on the **WebGPU AI** in my Carrom game.
+
+**The Problem:**
+- The compute shader runs successfully on the GPU
+- Scores are written to a storage buffer
+- But `stagingBuffer.mapAsync()` crashes on mobile (Android Chrome) with `AbortError: [Device] lost`.
+
+**What I've Tried:**
+- Verified buffer sizes match
+- Used `await device.queue.onSubmittedWorkDone()` before mapping
+- Added `pushErrorScope()` – no helpful errors reported
+- Tried smaller workgroup sizes
+
+If you know WebGPU/WGSL, please open an issue or DM me!
 
 ---
 
-## 🚀 How to Run
+## 🌟 Connect With Me
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/Anantattva/My-Games.git
+- **GitHub:** [github.com/Anantattva](https://github.com/Anantattva)
+- **Email:** uft289@gmail.com
+
+I'm always open to collaboration, feedback, or just a friendly chat.
+
+---
+
+## 📄 License
+
+MIT License – feel free to use, learn, and build upon these games.
+
+---
+
+**Made with ❤️ on a smartphone from Ranchi, India**
