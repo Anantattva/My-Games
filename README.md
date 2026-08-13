@@ -1,4 +1,4 @@
-# 🎮 My self-taught coding journey in web & games
+# 🎮 My self-taught programming journey in web & games
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Anantattva/My-Games)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Anantattva/My-Games)
@@ -34,7 +34,15 @@ I'm mostly into:
 - **WebGPU & WGSL** (graphics/compute shaders)
 - **WebAssembly & Rust**
 
-I tried many languages/frameworks for 2–7 days each – C#, Python, C++, Lua, Kotlin, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
+I tried many languages/frameworks for 2–7 days each – C#, C++, Lua, Kotlin, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
+
+About 5 years back, when I was 14, I tried twice learning Python by YouTube, cuz I had heard it's an easy language & used by hackers (I wanted to appear cool). It was an horrible experience. I built programming phobia since then and never coded until Feb 2026.
+
+Only now, that I could see programming has little to do with the language and more with you. Python simply didn't resonate with me and I clung rigidly to it regardless, moreover using YouTube as a learning environment made it more worse. On YT, you watch for 40 mins and code for 10. With book/docs/AI, you read syntax, API & concepts for 10 mins and code for 40. Moreover, now I find any language easy enough to learn.
+
+Furthermore, I observe one must never fall for the *illusion of ease* of a language. Instead, one should pick up tough language at first and then may shift to easier ones. This is because learning a tough language after an easy one is still a long curve; but learning an easy language after a tough one is a matter of days - you are merely mapping new syntax.
+
+> Personal opinion: Programming is closer to art & creativity than intelligence.
 
 I also happened to learn **LaTeX** to create PDFs for my Math Telegram channel (*Maths Olympiad Preparation*) focused on olympiads, JEE, and research math. It was the 3rd largest in its niche in India and #1 fastest growing – but I deleted it when I lost passion for math over time.
 
