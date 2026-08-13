@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>2048 Game</title>
+    <script type="module" src="Intelligence.js" defer></script>
+    <link rel="stylesheet" href="Design.css">
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alkatra&family=Allura&family=Amatic+SC&family=Antic+Didone&family=Architects+Daughter&family=Bebas+Neue&family=Bodoni+Moda&family=Castoro+Titling&family=Cinzel&family=Cormorant+Garamond&family=Courier+Prime&family=DM+Sans&family=Dancing+Script&family=Elsie&family=Fraunces&family=Gaegu&family=Gilda+Display&family=Inconsolata&family=Inter&family=Italiana&family=JetBrains+Mono&family=Josefin+Sans&family=Jost&family=La+Belle+Aurore&family=Lexend&family=Lora&family=Major+Mono+Display&family=Manrope&family=Milonga&family=Monoton&family=Montserrat&family=Oooh+Baby&family=Outfit&family=Parisienne&family=Playfair+Display&family=Plus+Jakarta+Sans&family=Pinyon+Script&family=Poiret+One&family=Poppins&family=Prata&family=Quicksand&family=Sacramento&family=Space+Grotesk&family=Space+Mono&family=Syne&family=Tenor+Sans&family=Unbounded&family=Urbanist&family=Vidaloka&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="game">
+      <div id="heading">
+        <div id="title" class="animate__animated
+          animate__heartBeat
+          animate__infinite"><span>2</span><span>0</span><span>4</span><span>8</span></div>
+      </div>
+      <div id="scores">
+        <h5>HIGH: <span id="highScore"></span>
+        </h5>
+        <h5>CURRENT: <span id="currentScore"></span>
+        </h5>
+      </div>
+      <div id="gridContainer">
+        <canvas id="gameGrid"></canvas>
+        <h6><< Swipe for Movements >></h6>
+      </div>
+      <div id="controls">
+        <button id="restartButton"><span>R</span><span>e</span><span>s</span><span>t</span><span>a</span><span>r</span><span>t</span></button>
+      </div>
+      <div id="gameOverScreen">
+        <svg class="curved-text-svg" viewBox="0 0 500 200">
+          <!-- 1. The invisible path that defines the curve -->
+          <path id="textCurve" d="M 50,150 Q 250,30 450,150" fill="transparent" />
+          <!-- 2. The text bound to the path above -->
+          <text class="animate__animated
+          animate__fadeIn
+          animate__once">
+            <textPath href="#textCurve" startOffset="50%" text-anchor="middle">!! GAME OVER !!
+            </textPath>
+          </text>
+        </svg>
+        <div id="gameOverResult" class="animate__animated
+          animate__fadeIn
+          animate__once">
+          <h5>Your All-Time Best: <span id="gameOverHigh"></span></h5>
+          <h5>Your Current Score: <span id="gameOverCurrent"></span></h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
