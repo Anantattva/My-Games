@@ -21,8 +21,8 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranc
   - [Month 3](#month-3--ai--decision-trees)
   - [Month 3.5](#month-35--advanced-logic)
   - [Month 4.5](#month-45--milestone-carrom-)
-- [How to Run](#-how-to-run)
 - [Connect With Me](#-connect-with-me)
+- [MIT License](#-license)
 
 ---
 
@@ -41,9 +41,9 @@ About 5 years back, when I was 14, I tried twice learning Python by YouTube, cuz
 
 Only now, that I could see programming has little to do with the language and more with you. Python simply didn't resonate with me and I clung rigidly to it regardless, moreover using YouTube as a learning environment made it more worse. On YT, you watch for 40 mins and code for 10. With book/docs/AI, you read syntax, API & concepts for 10 mins and code for 40. Moreover, now I find any language easy enough to learn.
 
-Furthermore, I observe one must never fall for the *illusion of ease* of a language. Instead, one should pick up tough language at first and then may shift to easier ones. This is because learning a tough language after an easy one is still a long curve; but learning an easy language after a tough one is a matter of days - you are merely mapping new syntax.
+Furthermore, I observe one must never fall for the *illusion of ease* of a language. Instead, one should pick up tough language at first and then may shift to easier ones. This is because learning a tough language *after an easy one* is still a long curve; but learning an easy language *after a tough one* is a matter of days - you are merely mapping new syntax.
 
-> Personal opinion: Programming is closer to art & creativity than intelligence.
+> Personal opinion: *Programming is closer to art & creativity than intelligence.*
 
 I also happened to learn **LaTeX** to create PDFs for my Math Telegram channel (*Maths Olympiad Preparation*) focused on olympiads, JEE, and research math. It was the 3rd largest in its niche in India and #1 fastest growing – but I deleted it when I lost passion for math over time.
 
@@ -69,7 +69,7 @@ Developers obsess over state management, but often forget to manage their very o
 
 - **Languages:** HTML, CSS, JavaScript (ES6 modules), Rust, WGSL
 - **APIs:** Canvas 2D, WebGPU, DOM API
-- **Patterns:** Mediator, Dependency Injection, Data-Oriented Design
+- **Patterns:** Mediator, Tree, Dependency Injection, Data-Oriented Design
 - **Tools:** Acode, Termux, Google Gemini AI
 
 ---
@@ -79,11 +79,11 @@ Developers obsess over state management, but often forget to manage their very o
 | Game | Screenshot |
 |------|------------|
 | Carrom | ![Carrom](screenshots/carrom.jpg) |
-| Tic Tac Toe | ![TTT](screenshots/ttt.png) |
-| 2048 | ![2048](screenshots/2048.png) |
-| Snake | ![Snake](screenshots/snake.png) |
+| Tic Tac Toe | ![TTT](screenshots/ttt.jpg) |
+| 2048 | ![2048](screenshots/2048.jpg) |
+| Snake | ![Snake](screenshots/snake.jpg) |
 
-*(Screenshots coming soon – I'm on mobile and haven't uploaded them yet!)*
+*(Gamplay videos coming soon – I'm on mobile and haven't uploaded them yet!)*
 
 ---
 
@@ -183,6 +183,10 @@ If you know WebGPU/WGSL, please open an issue or DM me!
 
 - **GitHub:** [github.com/Anantattva](https://github.com/Anantattva)
 - **Email:** uft289@gmail.com
+- **My other repos:**
+- [Learning Projects](https://github.com/Anantattva/My-Learning-Projects)
+- [WebGPU/Canvas Projects](https://github.com/Anantattva/WebGPU-Canvas-Projects)
+- [CSS Animations](https://github.com/Anantattva/CSS-Animations)
 
 I'm always open to collaboration, feedback, or just a friendly chat.
 
@@ -194,6 +198,8 @@ MIT License – feel free to use, learn, and build upon these games.
 
 ---
 
-**Made with ❤️ on a smartphone from Ranchi, India**
-
-**।। ॐ नमः शिवाय ।।**
+> **Made with ❤️ on a smartphone from Ranchi, India**
+> 
+> || *May our codes be fast, elegant & bug-free.* ||
+> 
+> **॥ हर हर महादेव ॥**
