@@ -14,6 +14,8 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranc
 - [About Me](#-about-me)
 - [Mindset & Philosophy](#-mindset--philosophy)
 - [Tech Stack](#%EF%B8%8F-tech-stack)
+- [Screenshots](-screenshots)
+- [Gameplay Videos](-gameplay-videos)
 - [Projects](#-projects-month-by-month)
   - [Month 1](#month-1--the-beginning)
   - [Month 2](#month-2--building-structure)
@@ -83,7 +85,12 @@ Developers obsess over state management, but often forget to manage their very o
 | 2048 | ![2048](screenshots/2048.jpg) |
 | Snake | ![Snake](screenshots/snake.jpg) |
 
-*(Gamplay videos coming soon – I'm on mobile and haven't uploaded them yet!)*
+---
+## Gameplay Videos
+
+| Game | Video |
+|------|-------|
+| Carrom | ![Carrom](videos/carrom.mp4) |
 
 ---
 
@@ -160,7 +167,7 @@ Developers obsess over state management, but often forget to manage their very o
 - ✅ CPU AI: Working perfectly
 - ✅ Physics engine: Working (friction, momentum transfer, pocketing)
 - ✅ Game loop, scoring, turn management: All working
-## 🆘 Help Wanted: WebGPU Debugging
+## 🆘 Help Needed: WebGPU Debugging
 
 I'm stuck on the **WebGPU AI** in my Carrom game.
 
