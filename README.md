@@ -97,6 +97,7 @@ Developers obsess over state management, but often forget to manage their very o
 ## Site Links
 - **Carrom:** [Anantattva/Carrom](superb-kringle-f1bc19.netlify.app)
 - **WebGPU Colour Visualizer:** [Anantattva/Colour Visualizer](colourvisualizer-webgpu.netlify.app)
+- **Snake:** [Anantattva/Snake](effortless-taffy-3d60ca.netlify.app)
 
 ---
 
