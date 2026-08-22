@@ -87,16 +87,17 @@ Developers obsess over state management, but often forget to manage their very o
 | Snake | ![Snake](screenshots/snake.jpg) |
 
 ---
-## Gameplay Videos
+## 💥 Gameplay Videos
 
 | Game | Video |
 |------|-------|
 | Carrom | ![Carrom](videos/carrom.mp4) |
 
 ---
-## Site Links
+## 🌐 Site Links
 - **Carrom:** [Anantattva/Carrom](superb-kringle-f1bc19.netlify.app)
 - **WebGPU Colour Visualizer:** [Anantattva/Colour Visualizer](colourvisualizer-webgpu.netlify.app)
+- **Tic Tac Toe:** [Anantattva/Tic Tac Toe](tiny-beijinho-e3a150.netlify.app)
 - **Snake:** [Anantattva/Snake](effortless-taffy-3d60ca.netlify.app)
 
 ---
