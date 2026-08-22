@@ -16,6 +16,7 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranc
 - [Tech Stack](#%EF%B8%8F-tech-stack)
 - [Screenshots](-screenshots)
 - [Gameplay Videos](-gameplay-videos)
+- [Site Links](-site-links)
 - [Projects](#-projects-month-by-month)
   - [Month 1](#month-1--the-beginning)
   - [Month 2](#month-2--building-structure)
@@ -91,6 +92,11 @@ Developers obsess over state management, but often forget to manage their very o
 | Game | Video |
 |------|-------|
 | Carrom | ![Carrom](videos/carrom.mp4) |
+
+---
+## Site Links
+- **Carrom:** [Anantattva/Carrom](superb-kringle-f1bc19.netlify.app)
+- **WebGPU Colour Visualizer:** [Anantattva/Colour Visualizer](colourvisualizer-webgpu.netlify.app)
 
 ---
 
