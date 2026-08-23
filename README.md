@@ -14,9 +14,9 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranc
 - [About Me](#-about-me)
 - [Mindset & Philosophy](#-mindset--philosophy)
 - [Tech Stack](#%EF%B8%8F-tech-stack)
-- [Screenshots](-screenshots)
-- [Gameplay Videos](-gameplay-videos)
-- [Site Links](-site-links)
+- [Screenshots](#-screenshots)
+- [Gameplay Videos](#-gameplay-videos)
+- [Site Links](#-site-links)
 - [Projects](#-projects-month-by-month)
   - [Month 1](#month-1--the-beginning)
   - [Month 2](#month-2--building-structure)
@@ -95,10 +95,11 @@ Developers obsess over state management, but often forget to manage their very o
 
 ---
 ## 🌐 Site Links
-- **Carrom:** [Anantattva/Carrom](superb-kringle-f1bc19.netlify.app)
-- **WebGPU Colour Visualizer:** [Anantattva/Colour Visualizer](colourvisualizer-webgpu.netlify.app)
-- **Tic Tac Toe:** [Anantattva/Tic Tac Toe](tiny-beijinho-e3a150.netlify.app)
-- **Snake:** [Anantattva/Snake](effortless-taffy-3d60ca.netlify.app)
+- **WebGPU Colour Visualizer:** [Anantattva/Colour Visualizer](https://colourvisualizer-webgpu.netlify.app)
+- **Tic Tac Toe:** [Anantattva/Tic Tac Toe](https://tiny-beijinho-e3a150.netlify.app)
+- **Snake:** [Anantattva/Snake](https://effortless-taffy-3d60ca.netlify.app)
+
+*(Other links coming soon.)*
 
 ---
 
@@ -199,9 +200,10 @@ If you know WebGPU/WGSL, please open an issue or DM me!
 - **GitHub:** [github.com/Anantattva](https://github.com/Anantattva)
 - **Email:** uft289@gmail.com
 - **My other repos:**
-- [Learning Projects](https://github.com/Anantattva/My-Learning-Projects)
-- [WebGPU/Canvas Projects](https://github.com/Anantattva/WebGPU-Canvas-Projects)
-- [CSS Animations](https://github.com/Anantattva/CSS-Animations)
+  - [Learning Projects](https://github.com/Anantattva/My-Learning-Projects)
+  - [WebGPU/Canvas Projects](https://github.com/Anantattva/WebGPU-Canvas-Projects)
+  - [CSS Animations](https://github.com/Anantattva/CSS-Animations)
+  - [WebAssembly Projects](https://github.com/Anantattva/WebAssembly-Projects)
 
 I'm always open to collaboration, feedback, or just a friendly chat.
 
