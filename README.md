@@ -95,6 +95,7 @@ Developers obsess over state management, but often forget to manage their very o
 
 ---
 ## 🌐 Site Links
+- **Carrom:** [Anantattva/Carrom](https://beautiful-rabanadas-6a4d79.netlify.app)
 - **WebGPU Colour Visualizer:** [Anantattva/Colour Visualizer](https://colourvisualizer-webgpu.netlify.app)
 - **Tic Tac Toe:** [Anantattva/Tic Tac Toe](https://tiny-beijinho-e3a150.netlify.app)
 - **Snake:** [Anantattva/Snake](https://effortless-taffy-3d60ca.netlify.app)
