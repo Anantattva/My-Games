@@ -1,4 +1,4 @@
-# 🎮 My self-taught programming journey in web & games
+# 🎮 My Self-Taught Programming Journey in Web & Games
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Anantattva/My-Games)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Anantattva/My-Games)
@@ -175,24 +175,9 @@ Developers obsess over state management, but often forget to manage their very o
 
 **⚠️ Status:**
 - ✅ CPU AI: Working perfectly
+- ✅ GPU AI: Working perfectly. It had ran into a serious `AbortError: Device lost` bug due to `GPU timeout error`: my simulation crossed the minimum threshold, generally 2 seconds. I quit working on it for 4 weeks, spent time on other WebGPU & Rust projects. By then I had developed necessary perception to profile the bug & fix + optimize it.
 - ✅ Physics engine: Working (friction, momentum transfer, pocketing)
 - ✅ Game loop, scoring, turn management: All working
-## 🆘 Help Needed: WebGPU Debugging
-
-I'm stuck on the **WebGPU AI** in my Carrom game.
-
-**The Problem:**
-- The compute shader runs successfully on the GPU
-- Scores are written to a storage buffer
-- But `stagingBuffer.mapAsync()` crashes on mobile (Android Chrome) with `AbortError: [Device] lost`.
-
-**What I've Tried:**
-- Verified buffer sizes match
-- Used `await device.queue.onSubmittedWorkDone()` before mapping
-- Added `pushErrorScope()` – no helpful errors reported
-- Tried smaller workgroup sizes
-
-If you know WebGPU/WGSL, please open an issue or DM me!
 
 ---
 
