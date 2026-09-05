@@ -172,12 +172,7 @@ Developers obsess over state management, but often forget to manage their very o
   - Extensive comments, JSDoc, explanations & personal notes
 - **AI Algorithm:** Distance minimization (closest pieces to pockets)
 - **Files:** `GameScreen.html`, `GameScreen_Consciousness.js`, `PureBeing.js`, `Engine.js`, `CarromAI.js`, `GPU_AI.js`, `Engine_Shader.js`, `Back2.jpg`
-
-**⚠️ Status:**
-- ✅ CPU AI: Working perfectly
-- ✅ GPU AI: Working perfectly. It had ran into a serious `AbortError: Device lost` bug due to `GPU timeout error`: my simulation crossed the minimum threshold, generally 2 seconds. I quit working on it for 4 weeks, spent time on other WebGPU & Rust projects. By then I had developed necessary perception to profile the bug & fix + optimize it.
-- ✅ Physics engine: Working (friction, momentum transfer, pocketing)
-- ✅ Game loop, scoring, turn management: All working
+- 🌠 Backstory 🎇: The GPU AI ran into a serious `AbortError: [Device] lost` issue, due to `TDR` alert - meaning the simulation exceeded the max time limits, likely 2 seconds. It was very challenging to fix, so I quit the project for 4 weeks & worked on other WebGPU & Rust projects — those helped me develop the necessary architectural intuition to profile the bottleneck & fix the bug. Finally, I could fix & get the GPU AI working.
 
 ---
 
