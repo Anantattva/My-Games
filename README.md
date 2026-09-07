@@ -150,15 +150,6 @@ Developers obsess over state management, but often forget to manage their very o
 
 ---
 
-### Month 3.5 – Advanced Logic
-
-#### 🔢 Guess the Number ++
-- **What:** Enhanced version with dynamic difficulty (user sets max limit)
-- **Tech:** Vanilla JS, dynamic DOM updates
-- **Files:** `Manifest.html`, `Art.css`, `Brain.js`
-
----
-
 ### Month 4.5 – MILESTONE: Carrom 🎯
 
 #### 📌 Carrom with Physics Engine + AI Opponent
