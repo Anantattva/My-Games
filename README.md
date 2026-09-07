@@ -181,10 +181,8 @@ Developers obsess over state management, but often forget to manage their very o
 - **GitHub:** [github.com/Anantattva](https://github.com/Anantattva)
 - **Email:** uft289@gmail.com
 - **My other repos:**
-  - [Learning Projects](https://github.com/Anantattva/My-Learning-Projects)
   - [WebGPU/Canvas Projects](https://github.com/Anantattva/WebGPU-Canvas-Projects)
-  - [CSS Animations](https://github.com/Anantattva/CSS-Animations)
-  - [WebAssembly Projects](https://github.com/Anantattva/WebAssembly-Projects)
+  - [Rust Projects](https://github.com/Anantattva/Rust-Projects)
 
 I'm always open to collaboration, feedback, or just a friendly chat.
 
