@@ -116,3 +116,7 @@ current.y = cached.y;
 - I opine it's likely because of GPU warp divergence - calling thousands of ifs/for/while created serialization across GPU cores - a phenomena known as *warp divergence*.
 - I have measured JS data sharing overhead. It's less than 30ms.
 - So, the bottleneck is entirely in WGSL & hardware overhead (which I currently don't know how to refactor).
+---
+## 🎖 Python Benchmarka
+- **Baseline Python**
+  - **Benchmark:** 90s
