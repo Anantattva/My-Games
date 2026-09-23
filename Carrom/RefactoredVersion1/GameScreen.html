@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans&family=Unbounded&display=swap" rel="stylesheet">
+    <title>
+      Carrom
+    </title>
+    <style>
+      body {
+        position: absolute;
+        margin: 0;
+        text-align: center;
+        z-index: 0;
+        height: 100dvh;
+        width: 100dvw;
+        background-image: url(Back2.jpg);
+        background-size: cover;
+        background-position: center;
+        /* rgba(0, 30, 240, 0.7) */
+        overflow: hidden;
+      }
+      #hello {
+        position: absolute;
+        z-index: 1;
+        left: 50dvw;
+        top: 3dvh;
+        transform: translateX(-50%);
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        font-size: 8vmin;
+        letter-spacing: 2px;
+        color: black;
+        text-shadow: 0 0 4px white;
+      }
+      
+      /* computer */
+      #computer {
+        position: absolute;
+        z-index: 1;
+        left: 50dvw;
+        top: calc(5dvh + 12vmin + 12px);
+        background: rgb(5, 230, 240);
+        border-top-left-radius: 3dvw;
+        border-bottom-left-radius: 3dvw;
+        box-shadow:
+          -0.65dvw 0 0 0 black,
+          0 0 2dvw 0.75dvw black;
+        transform: translateX(-50%);
+        width: calc(85dvw - 30px);
+        height: calc(15dvw - 30px);
+        padding: 15px 15px;
+        display: flex;
+        gap: 20%;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vmin;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: 'Cinzel';
+        text-shadow: 0 0 1px white;
+        color: black;
+      }
+      #computer-score {
+        color: maroon;
+        text-shadow: 0 0 2px white;
+      }
+      
+      /* human */
+      #striker-positioner {
+        position: absolute;
+        z-index: 1;
+        left: 50dvw;
+        top: 75dvh;
+        transform: translateX(-50%);
+        width: 60vmin;
+        height: 5vmin;
+        background: lime;
+        border-radius: 4vh;
+        border: 1px solid black;
+        box-shadow:
+          0 0 1px 1px rgba(0, 0, 0, 0.5),
+          0 0 1px 1px white;
+      }
+      #striker-html {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 6vmin;
+        height: 6vmin;
+        border-radius: 50%;
+        background: forestgreen;
+        border: 1px solid black;
+        box-shadow:
+          0 0 1px 1px rgba(0, 0, 0, 0.5),
+          0 0 2px 2px white;
+      }
+      #player {
+        position: absolute;
+        z-index: 1;
+        left: 50dvw;
+        top: 85dvh;
+        background: rgb(5, 230, 255);
+        border-top-right-radius: 3dvw;
+        border-bottom-right-radius: 3dvw;
+        box-shadow:
+          0.65dvw 0 0 0 black,
+          0 0 2dvw 0.75dvw black;
+        transform: translateX(-50%);
+        width: calc(85dvw - 30px);
+        height: calc(15dvw - 30px);
+        padding: 15px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+        font-size: 5vmin;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: 'Cinzel';
+        text-shadow: 0 0 1px white;
+        color: black;
+      }
+      #player-score {
+        color: maroon;
+        text-shadow: 0 0 2px white;
+      }
+      #board {
+        position: absolute;
+        margin: 0;
+        z-index: 1;
+        left: 50dvw;
+        top: 50dvh;
+        transform: translateX(-50%) translateY(-50%);
+        height: 40dvh;
+        width: 40dvh;
+        background: rgb(207, 120, 7);
+        border: 3px solid rgba(0, 240, 240, 0.66);
+        box-shadow:
+          0 0 2px 2px cyan,
+          0 0 4px 4px white
+        ;
+        border-radius: 3vmin;
+      }
+      
+      /* game over */
+      #game-over-screen {
+        position: absolute;
+        margin: 0;
+        display: none;
+        place-items: center;
+        z-index: 5;
+        height: 100dvh;
+        width: 100dvw;
+        backdrop-filter: blur(5px);
+      }
+      #winner-text {
+        font-family: 'Unbounded';
+        color: white;
+        text-shadow:
+          0 0 2px rgb(0, 0, 0),
+          0 0 4px rgba(240, 30, 30, 0.55),
+          0 0 6px rgba(220, 30, 30, 0.55),
+          0 0 8px rgba(200, 30, 30, 0.55)
+          ;
+        font-size: 6dvh;
+      }
+      #replay-button {
+        height: auto;
+        width: 25%;
+        padding: 5%;
+        border-radius: 4dvh;
+        border: 1px solid white;
+        box-shadow: 0 0 3dvw 1dvw rgba(0, 0, 0, 0.55);
+        background: black;
+        display: grid;
+        place-items: center;
+        transition: 0.4s;
+        color: white;
+        font-size: 4dvw;
+        font-family: 'DM Sans';
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+      #replay-button:active {
+        filter: brightness(1.2);
+        scale: 1.1;
+      }
+    </style>
+  </head>
+  <!-- THIS GAME WAS CODED AT 4.5 MONTH OF MY SELF-TEACHING JOURNEY -->
+  <!-- IT TOOK ABOUT 11 DAYS -->
+  <!-- Additional 2 complete days were spent in profiling & optimizing engine & AI -->
+  <!-- Additional 2 complete days were spent in rewriting the physics engine & AI simulation in WebGPU/WGSL -->
+  <!-- ENSURE READING COMMENTS, DOCS & "DEVELOPER'S NOTES" AT THE END OF EACH FILE -->
+  <body>
+    <!-- ।। ॐ नमः शिवाय ।। -->
+    <div id="hello">Carrom</div>
+    
+    <!-- computer -->
+    <div id="computer">Computer score: <span id="computer-score"></span></div>
+    
+    <!-- board -->
+    <canvas id="board"></canvas>
+    
+    <!-- human -->
+    <div id="striker-positioner">
+      <div id="striker-html"></div>
+    </div>
+    <div id="player">Your score: <span id="player-score"></span></div>
+    
+    <!-- game over -->
+    <div id="game-over-screen">
+      <div id="winner-text">Draw</div>
+      <button id="replay-button">Replay</button>
+    </div>
+    
+    <!-- js script -->
+    <script type="module" src="GameScreen_Consciousness.js" defer></script>
+  </body>
+</html>
