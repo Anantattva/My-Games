@@ -12,16 +12,20 @@
 - So, I moved out all necessary constants into a separate `Constants.js` file.
 ---
 ## 🎰 Improvements
-- The file implements `const isWindow = type of window !== 'undefined'` flag to ensure safe sharing of data & functions to Web Workers.
+- The file implements:
+ ```js
+ const isWindow = typeof window !== 'undefined';
+```
+  flag to ensure safe sharing of data & functions to Web Workers.
 - In the original version, I couldn't use Web Workers — prohibiting me to implement multi-threaded JS AI.
 ---
 ## 🏆 Performance
-- ### Naive JS
+- **Naive JS**
   - **Benchmark:** 5 seconds
   - My JS AI version used methods like `structuredClone, map, forEach, filter, some, every`; allocated during tight loops & was poorly optimized. (That file is not posted here, I deleted it.)
   - This would run at `5s` to execute 1485 iterations.
   - It would stay at 5s - V8 couldn't magically optimize anything.
-- ### My Hand-Tuned JS
+- **My Hand-Tuned JS**
   - **Benchmark:** 1.1 seconds (pre-warm)
   - **Benchmark:** 830ms (V8 optimized)
   - This version implemented MASSIVE object pooling - keeping GC spikes minimal.
@@ -31,7 +35,7 @@
   - This provided stable shapes, monomorphic & predictable hidden classes - which V8 can optimize aggressively.
   - This would run at `1.1s` generally.
   - V8 would optimize it down to `830ms`.
-- ### Web Worker JS
+- **Web Worker JS**
   - **Benchmark:** 830ms (pre-warm)
   - **Benchmark:** 420ms (JIT optimized)
   - This is the same as my hand-tuned JS version.
