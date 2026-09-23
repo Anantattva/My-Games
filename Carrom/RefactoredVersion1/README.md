@@ -2,7 +2,7 @@
 
 # 🎯 Carrom Engine
 
-### A physics & AI engine, ported across 5 runtimes — and benchmarked all.
+### 🏵⚡ A Physics & AI engine, ported across 5 runtimes — and benchmarked all. ⚡🏵
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
