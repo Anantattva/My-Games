@@ -31,7 +31,15 @@
   - This version implemented MASSIVE object pooling - keeping GC spikes minimal.
   - It used custom functions & manual loop over allocation-heavy `structuredClone` and `map, forEach, filter, every, some`.
   - `Math.hypot()` was replaced with `Math.sqrt()` - a massive gain.
-  - Instead of reassigning objects casually like `current = cached` — explicit field-by-field assignment was used: `current.x = cached.x; current.y = cached.y; ...`.
+  - Instead of reassigning objects casually like:
+ ```js
+current = cached;
+```
+  — explicit field-by-field assignment was used
+```js
+current.x = cached.x;
+current.y = cached.y;
+```
   - This provided stable shapes, monomorphic & predictable hidden classes - which V8 can optimize aggressively.
   - This would run at `1.1s` generally.
   - V8 would optimize it down to `830ms`.
