@@ -1,4 +1,38 @@
-# Refactored Carrom
+<div align="center">
+
+# 🎯 Carrom Engine
+
+### A physics & AI engine, ported across 5 runtimes — and benchmarked like it matters.
+
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Lua](https://img.shields.io/badge/LuaJIT-2C2D72?style=for-the-badge&logo=lua&logoColor=white)](https://luajit.org/)
+[![WebGPU](https://img.shields.io/badge/WebGPU-005A9C?style=for-the-badge&logo=webgpu&logoColor=white)](https://www.w3.org/TR/webgpu/)
+
+[![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-red?style=flat-square)]()
+[![Benchmarks Honest](https://img.shields.io/badge/benchmarks-honest-brightgreen?style=flat-square)]()
+[![Iterations Normalized](https://img.shields.io/badge/iterations-1485-blue?style=flat-square)]()
+
+</div>
+
+## 🎲 What even is this?
+
+This started as a **Carrom game in JavaScript** — a small board game with physics (momentum, friction, bouncing) and an AI that searches for the best possible shot across ~1,485 candidate trajectories.
+
+Then I got curious.
+
+I wondered how fast this same engine would run in **Rust**, **Python**, **LuaJIT**, and **WebGPU**. So I ported it. Five times. Implemented both single-threaded & multi-threading versions.
+
+Then I benchmarked all of them. Same algorithm, same constants, same iteration count (1485), same phone.
+
+@acknowledgment
+- I don't know Python & Lua.
+- DeepSeek AI wrote Python versions.
+- Gemini AI wrote Lua versions.
+- Both used my architecture & design as in JS, WebGPU & Rust
+
+What I learned changed how I think about programming languages.
 
 ## Table of Contents
 - [🎲 What changed??]()
@@ -7,7 +41,7 @@
 - 🪗 Tests across 5 runtimes
 
 ## 🎲 What changed??
-- My original used local constants.
+- My original version of this Carrom game used local constants.
 - This led to tight-coupling & inter-dependency.
 - So, I moved out all necessary constants into a separate `Constants.js` file.
 ---
