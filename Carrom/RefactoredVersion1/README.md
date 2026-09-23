@@ -86,3 +86,15 @@ current.y = cached.y;
   - You can pass `requestedThreads` into parameter if you wish - function safely clamps it between 1 to MAX.
   - It runs at `830ms` generally.
   - V8 would optimize it down to half `420ms`.
+ 
+ ## 🥇 Rust Benchmarks
+ - **Baseline Rust**
+  - **Benchmark:** 210ms
+  - This is just JS hand-tuned version written in Rust.
+- **4 cores Rust**
+  - **Benchmark:** 120ms
+  - I used manual multi-threading via `std::thread` crate of Rust's standard library (no Rayon) to spawn 4 `<ScopedJoinHandle>` collect back results & return best one.
+ - **4 cores + Tuned Rust**
+   - **Benchmark:** 80ms
+   - Again, same manual concurrency. But with minor optimization tricks.
+   - Added *false-spatial-partitioning* via early-exits & eliminated unnecesary `sqrt` checks for distances.
