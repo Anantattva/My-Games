@@ -110,5 +110,9 @@ current.y = cached.y;
   - Again, JIT optimized.
 ---
 ## 🎖 WebGPU Benchmarks
+- **Benchmark:** 1.8s
 - I have only one implementation of WebGOU (which too was notoriously hard to debug).
-- Surpris
+- Surprisingly, it's way too slow for a GPU.
+- I opine it's likely because of GPU warp divergence - calling thousands of ifs/for/while created serialization across GPU cores - a phenomena known as *warp divergence*.
+- I have measured JS data sharing overhead. It's less than 30ms.
+- So, the bottleneck is entirely in WGSL & hardware overhead (which I currently don't know how to refactor).
