@@ -88,7 +88,7 @@ current.y = cached.y;
   - V8 would optimize it down to half `420ms`.
  
  ## 🥇 Rust Benchmarks
- - **Baseline Rust**
+- **Baseline Rust**
   - **Benchmark:** 210ms
   - This is just JS hand-tuned version written in Rust.
 - **4 cores Rust**
