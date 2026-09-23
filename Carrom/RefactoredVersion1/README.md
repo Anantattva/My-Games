@@ -120,3 +120,7 @@ current.y = cached.y;
 ## 🎖 Python Benchmarka
 - **Baseline Python**
   - **Benchmark:** 90s
+- **Pure CPython**
+  - **Benchmark:** 30s
+- **Numpy + 4 Cores**
+  - **Benchmark:** 46s
