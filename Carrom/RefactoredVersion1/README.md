@@ -86,7 +86,7 @@ current.y = cached.y;
   - You can pass `requestedThreads` into parameter if you wish - function safely clamps it between 1 to MAX.
   - It runs at `830ms` generally.
   - V8 would optimize it down to half `420ms`.
- 
+ ---
  ## 🥇 Rust Benchmarks
 - **Baseline Rust**
   - **Benchmark:** 210ms
@@ -98,3 +98,17 @@ current.y = cached.y;
    - **Benchmark:** 80ms
    - Again, same manual concurrency. But with minor optimization tricks.
    - Added *false-spatial-partitioning* via early-exits & eliminated unnecesary `sqrt` checks for distances.
+---
+## 🎖 LuaJIT Benchmarks
+- **Single-threaded LuaJIT**
+  - **Benchmark:"" 1.1s
+  - This is JIT optimized Lua.
+  - Interestingly, it runs only as fast as cold V8 hand-tuned JS.
+- **4 cores LuaJIT**
+  - **Benchmark:** 530ms
+  - Uses 4 threads concurrency.
+  - Again, JIT optimized.
+---
+## 🎖 WebGPU Benchmarks
+- I have only one implementation of WebGOU (which too was notoriously hard to debug).
+- Surpris
