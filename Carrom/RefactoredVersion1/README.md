@@ -140,8 +140,9 @@ Hiding memory management doesn't eliminate memory bugs; it just makes them silen
 - **Hidden Leaks:** A Garbage Collector cannot free what is still reachable. Event listeners, closures, and static caches leak just as easily in JS or Python as they do anywhere else.
 - **Cache Unfriendliness:** Scatter your objects across heap pages, and your CPU spends more time waiting on cache misses than executing instructions.
 
-### How We Smashed the JS Benchmark
-By taking manual control of the memory architecture in JavaScript—using **object pooling**, pre-allocated flat structures, monomorphic shape stability, and field-by-field copies instead of reference mutations—we brought single-threaded JS within striking distance of baseline Rust. 
+### How I Smashed the JS Benchmark
+By taking manual control of the memory architecture in JavaScript—using **object pooling**,custom loop functions, pre-allocated flat structures, monomorphic shape stability, and field-by-field copies instead of reference mutations — I brought single-threaded & mutli-threaded JS within striking distance of baseline Rust. 
 
-**Memory layout dominates performance, and no runtime can abstract that away.**
+> *Memory layout dominates performance, and no runtime can abstract that away.*
+> *When you write C-style memory-conscious JS, V8 does reward you with C-style speed.*
 
