@@ -117,10 +117,12 @@ current.y = cached.y;
 - I have measured JS data sharing overhead. It's less than 30ms.
 - So, the bottleneck is entirely in WGSL & hardware overhead (which I currently don't know how to refactor).
 ---
-## 🎖 Python Benchmarka
+## 🎖 Python Benchmarks
 - **Baseline Python**
   - **Benchmark:** 90s
 - **Pure CPython**
   - **Benchmark:** 30s
+  - Best for an interpreted language.
 - **Numpy + 4 Cores**
   - **Benchmark:** 46s
+  - Astonishingly, Numpy & thread-spawning overhead negated all gains.
