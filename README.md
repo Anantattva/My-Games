@@ -38,7 +38,7 @@ I'm mostly into:
 - **WebGPU & WGSL** (graphics/compute shaders)
 - **WebAssembly & Rust**
 
-I tried many languages/frameworks for 2–7 days each – C#, C++, Lua, Kotlin, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
+I tried many languages/frameworks for 2–7 days each – C#, C++, Lua, Kotlin, Zig, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
 
 About 5 years back, when I was 14, I tried twice learning Python by YouTube, cuz I had heard it's an easy language & used by hackers (I wanted to appear cool). It was an horrible experience. I developed programming phobia since then and never coded until Feb 2026.
 
@@ -71,7 +71,7 @@ Developers obsess over state management, but often forget to manage their very o
 ## 🛠️ Tech Stack
 
 - **Languages:** HTML, CSS, JavaScript (ES6 modules), Rust, WGSL
-- **APIs:** Canvas 2D, WebGPU, DOM API
+- **APIs:** Canvas 2D, WebGPU, DOM API, Web Workerd
 - **Patterns:** Mediator, Tree, Dependency Injection, Data-Oriented Design
 - **Tools:** Acode, Termux, Google Gemini AI
 
