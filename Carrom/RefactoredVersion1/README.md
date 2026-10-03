@@ -34,6 +34,7 @@
   - [🔲 WebGPU](#-webgpu-benchmarks)
   - [🐍 Python](#-python-benchmarks)
 - [🏆 Architectural Insight](#-the-architectural-insight-the-lie-of-managed-memory)
+- [🪩 Benchmarks Added Later](#-benchmarks-added-later)
 ---
 
 ## 🎲 Overview: What Even Is This?
@@ -149,3 +150,8 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 > *Memory layout dominates performance, and no runtime can abstract that away.*
 > *When you write C-style memory-conscious JS, V8 does reward you with C-style speed.*
 
+## 🪩 Benchmarks Added Later
+- **Nim/C:** 90ms
+- **C++:** 90ms
+- **Swift:** 90ms
+- **Go:** 100ms
