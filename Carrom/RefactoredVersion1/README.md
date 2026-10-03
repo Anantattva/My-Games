@@ -157,7 +157,7 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 > *When you write C-style memory-conscious JS, V8 does reward you with C-style speed.*
 
 ## 🪩 Benchmarks Added Later
-- **Nim/C:** 90ms
-- **C++:** 90ms
-- **Swift:** 90ms
-- **Go:** 100ms
+- **Nim/C:** 90ms (Ported by Claude)
+- **C++:** 90ms (Ported by Gemini)
+- **Swift:** 90ms (Ported by Gemini)
+- **Go:** 100ms (Ported by DeepSeek)
