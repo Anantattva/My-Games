@@ -158,6 +158,9 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 
 ## 🪩 Benchmarks Added Later
 - **WebGPU:** 150ms (same engine, completely new architecture, hand-written by me ofc)
+- **Tuned DOD 8 Core JS:** 220ms (mine)
+- **Tuned DOD 4 Core JS:** 290ms (mine)
+- **Tuned DOD 1 Core JS:** 450ms (mine)
 - **Nim/C:** 90ms (Ported by Claude)
 - **C++:** 90ms (Ported by Gemini)
 - **Swift:** 90ms (Ported by Gemini)
