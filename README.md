@@ -37,6 +37,7 @@ I'm mostly into:
 - **Vanilla JS** (no frameworks!)
 - **WebGPU & WGSL** (graphics/compute shaders)
 - **WebAssembly & Rust**
+- **Sometimes ARM64 Assembly too**
 
 I tried many languages/frameworks for 2–7 days each – C#, C++, Lua, Kotlin, Zig, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
 
