@@ -4,7 +4,10 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Anantattva/My-Games)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Anantattva/My-Games)
-![Made with ❤️](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
+[![Made in Ranchi](https://img.shields.io/badge/Made%20in-Ranchi,%20India-%23FF9933?style=for-the-badge&logo=cratedb&logoColor=white)](https://github.com)
+
+
+![Made with 🩵](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
 </div>
 
 > **।। ॐ नमः शिवाय ।।**
