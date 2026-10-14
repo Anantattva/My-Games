@@ -12,7 +12,7 @@
 
 > **।। ॐ नमः शिवाय ।।**
 
-Hello world, I am **Karan Gupta** – a 19-year-old IGNOU BCOM student from Ranchi, India.
+Hello world, I am **Karan Gupta** – a 19-year-old IGNOU B.Com student from Ranchi, India.
 
 ---
 
