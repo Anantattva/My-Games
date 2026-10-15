@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🎮 My Self-Taught Programming Journey in Web & Games
+# 🏙 My Self-Taught Programming Journey 🌉
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Anantattva/My-Games)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Anantattva/My-Games)
