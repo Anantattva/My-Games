@@ -41,6 +41,7 @@
   - [🐍 Python](#-python-benchmarks)
 - [🏆 Architectural Insight](#-the-architectural-insight-the-lie-of-managed-memory)
 - [🪩 Benchmarks Added Later](#-benchmarks-added-later)
+- [🌉 On WebGPU](#-on-webgpu)
 ---
 
 ## 🎲 Overview: What Even Is This?
@@ -165,3 +166,14 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 - **4 Core C++:** 90ms (Ported by Gemini)
 - **4 Core Swift:** 120ms (Ported by Gemini)
 - **4 Core Go:** 100ms (Ported by DeepSeek)
+
+## 🌉 On WebGPU
+- This is the second most interesting finding here.
+- And I want to ve explicit about it.
+- My first WebGPU AI implemented "One Thread - One Shot" structure. However this assumed a GPU is just a bigger CPU with more cores.
+- I learned the hard way that each GPU core is a tiny SIMD unit and each is atleast ~ 1000x weaker than one CPU core.
+- As a result, I wrote the same engine with a newer architecture: "One Workgroup - One Shot".
+- Unlike the previous version where one GPU core would handle all 20 entities. The new version handles only one entity per core.
+- As a result of which, the rate of warp divergence & GPU serialization overhead got much lower — yielding a flat 12x gain.
+- The code is same, the physics pipeline is same. Yet performance is 1200% more, not 5, 20 or 100 - straight 1200% more.
+- This again underpins my earlier insight that architecture & memory layout dominates performance.
