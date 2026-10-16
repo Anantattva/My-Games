@@ -15,6 +15,8 @@
 ![Swift](https://img.shields.io/badge/Swift-F05138.svg?style=for-the-badge&logo=swift&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![PyPy](https://img.shields.io/badge/PyPy-3.11-3B3B3B?style=for-the-badge&logo=pypy&logoColor=white)
 
 [![Made in Ranchi](https://img.shields.io/badge/Made%20in-Ranchi,%20India-%23FF9933?style=for-the-badge&logo=cratedb&logoColor=white)](https://github.com)
 
