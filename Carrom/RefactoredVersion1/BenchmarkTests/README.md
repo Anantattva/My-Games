@@ -16,7 +16,7 @@
 | 12 | **JavaScript (Web Worker, Hand-Tuned)** | **830ms** | 4 cores (Pre-warm) |
 | 13 | **LuaJIT (Single-Threaded)** | **1,100ms** (1.1s) | Single-threaded JIT |
 | 14 | **JavaScript (Hand-Tuned, Pre-Warm)** | **1,100ms** (1.1s) | Single-threaded | **1700ms** (1.7s) | Single-threaded |
-| 15 | **PyPy3** | 
+| 15 | **PyPy3** | **1700ms** (1.7s) | Single-Threaded + JIT |
 | 16 | **WebGPU (WGSL)** | **1,800ms** (1.8s) | GPU Compute Shader |
 | 17 | **Naive JS (cold/warm)** | **5000ms** (5s) | Unoptimized JS |
 | 18 | **Python (Pure CPython)** | **30,000ms** (30s) | Single-threaded |
