@@ -164,8 +164,10 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 - **Tuned DOD 1 Core JS:** 450ms (mine)
 - **4 Core Nim/C:** 90ms (Ported by Claude)
 - **4 Core C++:** 90ms (Ported by Gemini)
-- **4 Core Swift:** 120ms (Ported by Gemini)
+- **4 Core Swift:** 100ms (Ported by Gemini)
 - **4 Core Go:** 100ms (Ported by DeepSeek)
+- **4 Core Java:** 125ms (Ported by Gemini)
+- **1 Core PyPy3:** 1700ms (Ported by DeepSeek)
 
 ## 🌉 On WebGPU
 - This is the second most interesting finding here.
