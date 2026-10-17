@@ -17,6 +17,7 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![PyPy](https://img.shields.io/badge/PyPy-3.11-3B3B3B?style=for-the-badge&logo=pypy&logoColor=white)
+[![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
 
 [![Made in Ranchi](https://img.shields.io/badge/Made%20in-Ranchi,%20India-%23FF9933?style=for-the-badge&logo=cratedb&logoColor=white)](https://github.com)
 
