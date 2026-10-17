@@ -46,6 +46,7 @@
 - [🏆 Architectural Insight](#-the-architectural-insight-the-lie-of-managed-memory)
 - [🪩 Benchmarks Added Later](#-benchmarks-added-later)
 - [🌉 On WebGPU](#-on-webgpu)
+- [🧘‍♂️ Personal Insights](#-personal-insights)
 ---
 
 ## 🎲 Overview: What Even Is This?
@@ -188,4 +189,11 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 
 ## 🧘‍♂️ Personal Insights
 - After running & seeing the performance of so many languages on the same carrom engine, I want to say I went through 2 major mindset shifts
-- **Illusion of Speed:** Developers fight over which language is fastest. C++ people mock everyone elst'nno
+- **Illusion of Speed:** Developers fight over which language is fastest. Now I can see that no language has inherent speed of its own. C++ isn't fast & Python isn't slow.
+- The language is just syntax. The speed is entirely set by the runtime.
+- Give C++ an interpreter and it will be slow. Give Python AOT and it will be ultra-fast.
+- **Illusion of Verbosity:** Across all the files, one will find almost every engine lands between 500 to 600 lines of code.
+- Java is famously believed to be verbose & Python is believed to be clean.
+- But I have observed verbosity is a context-dependent & relative idea.
+- I have written programs in Rust that happen to be nearly half of length of JS.
+- **Death of Hatred:** Before I used to hate Python & Java. But now that sense of hate has somewhere dissolved. Neither language has objectively anything worse about them - both provide a way to talk to the machine.
