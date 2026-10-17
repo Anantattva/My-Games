@@ -185,3 +185,7 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 - As a result of which, the rate of warp divergence & GPU serialization overhead got much lower — yielding a flat 12x gain.
 - The code is same, the physics pipeline is same. Yet performance is 1200% more, not 5, 20 or 100 - straight 1200% more.
 - This again underpins my earlier insight that architecture & memory layout dominates performance.
+
+## 🧘‍♂️ Personal Insights
+- After running & seeing the performance of so many languages on the same carrom engine, I want to say I went through 2 major mindset shifts
+- **Illusion of Speed:** Developers fight over which language is fastest. C++ people mock everyone elst'nno
