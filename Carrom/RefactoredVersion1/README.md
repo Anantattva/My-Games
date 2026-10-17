@@ -197,3 +197,5 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 - But I have observed verbosity is a context-dependent & relative idea.
 - I have written programs in Rust that happen to be nearly half of length of JS.
 - **Death of Hatred:** Before I used to hate Python & Java. But now that sense of hate has somewhere dissolved. Neither language has objectively anything worse about them - both provide a way to talk to the machine.
+
+> **।। ॐ नमः शिवाय ।।**
