@@ -173,8 +173,9 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 - **4 Core Go:** 100ms (Ported by DeepSeek)
 - **4 Core Java:** 125ms (Ported by Gemini)
 - **1 Core PyPy3:** 1700ms (Ported by DeepSeek)
-- **4 Core Kotlin:** 136ms (Ported by Gemini)
-- **1 Core CRuby:** 17s (Ported By DeepSeek)
+- **4 Core Kotlin:** 135ms (Ported by Gemini)
+- **1 Core CRuby:** 17000ms/17s (Ported By DeepSeek)
+- **4 Core Dart:** 240ms (Ported by DeepSeek)
 
 ## 🌉 On WebGPU
 - This is the second most interesting finding here.
