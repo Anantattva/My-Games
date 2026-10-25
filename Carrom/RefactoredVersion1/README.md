@@ -22,6 +22,8 @@
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 
+![Elixir](https://img.shields.io/badge/elixir-%234B275F.svg?style=for-the-badge&logo=elixir&logoColor=white)
+
 [![Made in Ranchi](https://img.shields.io/badge/Made%20in-Ranchi,%20India-%23FF9933?style=for-the-badge&logo=cratedb&logoColor=white)](https://github.com)
 
 
@@ -178,6 +180,7 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 - **4 Core Kotlin:** 135ms (Ported by Gemini)
 - **1 Core CRuby:** 17000ms/17s (Ported By DeepSeek)
 - **4 Core Dart:** 240ms (Ported by DeepSeek)
+- **4 Core Elixir:** 5700ms/5.7s (Ported by DeepSeek)
 
 ## 🌉 On WebGPU
 - This is the second most interesting finding here.
