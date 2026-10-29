@@ -18,6 +18,7 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU B.Com student from Ran
 
 ## 📑 Table of Contents
 - [About Me](#-about-me)
+- [Open Source Contributions](#-open-source-contributions)
 - [Mindset & Philosophy](#-mindset--philosophy)
 - [Tech Stack](#%EF%B8%8F-tech-stack)
 - [Screenshots](#-screenshots)
@@ -64,6 +65,13 @@ I also happened to learn **LaTeX** to create PDFs for my Math Telegram channel (
 I coded many more games & projects in between, but I left them incomplete. So they are not posted here.
 
 ---
+
+## 🌍 Open Source Contributions
+
+### V Language (`vlang/v`) - Merged PR
+- **Mini Software Emulator (ARM64-Inspired VM):** Authored a ~1,000-line, dependency-free bytecode interpreter and virtual machine. Includes a 44-instruction dispatch table, fixed-width 32-bit encoding, and an ARM-style flag model. 
+- **Status:** Tested for malformed-bytecode, overflow boundaries, and invalid jump targets; **reviewed and merged by the creator of V (Alexander Medvednikov) in 3 hours.**
+- **Link:** [PR #31306](https://github.com/vlang/v/pull/31306)
 
 ## 🧘 Mindset & Philosophy
 
