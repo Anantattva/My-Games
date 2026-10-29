@@ -86,7 +86,7 @@ Developers obsess over state management, but often forget to manage their very o
 ## 🛠️ Tech Stack
 
 - **Languages:** HTML, CSS, JavaScript (ES6 modules), Rust, WGSL
-- **APIs:** Canvas 2D, WebGPU, DOM API, Web Workerd
+- **APIs:** Canvas 2D, WebGPU, DOM API, Web Workers
 - **Patterns:** Mediator, Tree, Dependency Injection, Data-Oriented Design
 - **Tools:** Acode, Termux, Google Gemini AI
 
