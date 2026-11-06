@@ -180,6 +180,10 @@ By taking manual control of the memory architecture in JavaScript—using **obje
   - Deno: 165ms
   - Bun: 160ms
 - **Tuned DOD 1 Core JS (Chrome WebView):** 450ms (mine)
+- **Tuned DOD 4 Core JS + Atomics Work-Stealing:""
+  - Node: 140ms
+  - Deno: 130ms
+  - Bun: 105ms
 - **4 Core Nim/C:** 90ms (Ported by Claude)
 - **4 Core C++:** 90ms (Ported by Gemini)
 - **4 Core Swift:** 100ms (Ported by Gemini)
