@@ -198,6 +198,7 @@ By taking manual control of the memory architecture in JavaScript—using **obje
 - **4 Core Dart:** 240ms (Ported by DeepSeek)
 - **4 Core Elixir:** 5700ms/5.7s (Ported by DeepSeek)
 - **4 Core Dlang:** 85ms (Ported by Gemini)
+- **4 Core Crystal:** 115ms (Ported by Gemini)
 
 ## 🌉 On WebGPU
 - This is the second most interesting finding here.
