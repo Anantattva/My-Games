@@ -45,8 +45,9 @@ I'm mostly into:
 - **WebGPU & WGSL** (graphics/compute shaders)
 - **WebAssembly & Rust**
 - **Sometimes ARM64 Assembly too**
+- **These days Dlang is pulling my fascination too**
 
-I tried many languages/frameworks for 2–7 days each – C#, C++, Lua, Kotlin, Zig, Dlang, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
+I tried many languages/frameworks for 2–7 days each – C#, C++, Lua, Kotlin, Zig, Vue.js, React.js, Three.js, Babylon.js – but none resonated. So I discarded them and stuck to the web + Rust stack.
 
 About 5 years back, when I was 14, I tried twice learning Python by YouTube, cuz I had heard it's an easy language & used by hackers (I wanted to appear cool). It was an horrible experience. I developed programming phobia since then and never coded until Feb 2026.
 
