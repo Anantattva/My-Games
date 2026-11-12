@@ -2,7 +2,7 @@
 
 # 🎯 Carrom Engine
 
-### 🏵⚡ A Physics & AI engine, ported across 14 runtimes — and benchmarked all. ⚡🏵
+### 🏵⚡ A Physics & AI engine, ported across 20 runtimes — and benchmarked all. ⚡🏵
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
@@ -29,6 +29,7 @@
 ![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white)
 
 [![D](https://img.shields.io/badge/D-B03931?style=flat-square&logo=d&logoColor=white)](https://dlang.org/)
+![Crystal](https://img.shields.io/badge/Crystal-000000?style=flat&logo=crystal&logoColor=white)
 
 [![Made in Ranchi](https://img.shields.io/badge/Made%20in-Ranchi,%20India-%23FF9933?style=for-the-badge&logo=cratedb&logoColor=white)](https://github.com)
 
