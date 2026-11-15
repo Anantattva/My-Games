@@ -78,6 +78,7 @@ I coded many more games & projects in between, but I left them incomplete. So th
 
 ## 🏂 Current Status
 > Currently, I am less into game, graphics & web; and more into virtual machines & interpreters.
+
 Check out my repo [Friendly Virtual Machines](https://github.com/Anantattva/Friendly-Virtual-Machines). It's a collection of tiny virtual machines & bytecode interpreters — each with it's unique design.
 
 ## 🧘 Mindset & Philosophy
