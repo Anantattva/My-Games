@@ -19,6 +19,7 @@ Hello world, I am **Karan Gupta** – a 19-year-old IGNOU B.Com student from Ran
 ## 📑 Table of Contents
 - [About Me](#-about-me)
 - [Open Source Contributions](#-open-source-contributions)
+- [Current Status](#-current-status)
 - [Mindset & Philosophy](#-mindset--philosophy)
 - [Tech Stack](#%EF%B8%8F-tech-stack)
 - [Screenshots](#-screenshots)
@@ -73,6 +74,11 @@ I coded many more games & projects in between, but I left them incomplete. So th
 - **Mini Software Emulator (ARM64-Inspired VM):** Authored a ~1,000-line, dependency-free bytecode interpreter and virtual machine. Includes a 44-instruction dispatch table, fixed-width 32-bit encoding, and an ARM-style flag model. 
 - **Status:** Tested for malformed-bytecode, overflow boundaries, and invalid jump targets; **reviewed and merged by the creator of V (Alexander Medvednikov) in 3 hours.**
 - **Link:** [PR #31306](https://github.com/vlang/v/pull/31306)
+---
+
+## 🏂 Current Status
+> Currently, I am less into game, graphics & web; and more into virtual machines & interpreters.
+Check out my repo [Friendly Virtual Machines](https://github.com/Anantattva/Friendly-Virtual-Machines). It's a collection of tiny virtual machines & bytecode interpreters — each with it's unique design.
 
 ## 🧘 Mindset & Philosophy
 
